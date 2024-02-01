@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #abbabb, #e1f0da);
+  padding: 10px;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.content img {
+  height: 420px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 620px;
+  background-color: #fff;
+  margin: 0 0 20px;
+  padding: 40px 30px 70px;
+  border-radius: 12px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.title h2 {
+  color: #002765;
+}
+.title img {
+  height: 28px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #edeef0;
+  border-radius: 30px;
+  padding-left: 10px;
+  margin-bottom: 12px;
+}
+
+.row #input-box {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  flex: 1;
+  padding: 10px;
+}
+
+.row button {
+  border: none;
+  outline: none;
+  padding: 12px 40px;
+  background-color: #002765;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.row button:hover {
+  transition: all;
+  transition-duration: 300ms;
+  background-color: #255fbd;
+}
+
+#task-container li {
+  list-style: none;
+  font-size: 16px;
+  user-select: none;
+  padding: 6px 8px 6px 40px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#task-container li span {
+  font-size: 14px;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 50%;
+  color: #666;
+}
+#task-container li span:hover {
+  transition: all;
+  transition-duration: 300ms;
+  color: #ff3d1b;
+  background: #e2e2e2;
+}
+
+#task-container li:hover {
+  transition: all;
+  transition-duration: 300ms;
+  color: #ff7e1b;
+}
+
+#task-container li::before {
+  content: "";
+  height: 16px;
+  width: 16px;
+  border: 2px solid #676767;
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+  left: 8px;
+}
+
+#task-container li.checked {
+  color: #999;
+  text-decoration: line-through;
+}
+#task-container li.checked::before {
+  background-color: #002765;
+}
+
+#task-container h3 {
+  color: #999;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 0 0 10px;
+}
+
+@media screen and (max-width: 920px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .content img {
+    height: 200px;
+    object-fit: contain;
+  }
+  .title img {
+    height: 28px;
+  }
+
+  .todo-app {
+    padding: 30px 20px 40px;
+  }
+}

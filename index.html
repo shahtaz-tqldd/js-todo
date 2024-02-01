@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/03c1d2f3f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Todo App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <img src="./assets/images/todo.png" alt="" class="todobg" />
+        <div class="todo-app">
+          <div class="title">
+            <img src="./assets/images/todo.svg" alt="todo" />
+            <h2>My Todo Lists</h2>
+          </div>
+          <div class="row">
+            <input
+              type="text"
+              id="input-box"
+              placeholder="Add your todo"
+              onkeydown="handleKeyPress(event)"
+            />
+            <button onclick="addTask()">Add</button>
+          </div>
+          <ul id="task-container"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
