@@ -1,4 +1,4 @@
-# JustDo - Simple TODO App with Vanilla JS and CSS
+## Justodojs - Simple TODO App with Vanilla JS and CSS
 
 [Live Link](https://justodojs.netlify.app/)
 
